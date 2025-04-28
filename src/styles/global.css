@@ -3,7 +3,19 @@
 :root {
   --color-theme-darkBlue: #003049;
   --color-theme-lightBlue: #669bbc;
-  --color-prymary: #fdf0d5;
+  --color-theme-blue: #255f85;
+
   --color-theme-darkRed: #780000;
   --color-theme-lightRed: #c1121f;
+  --color-theme-red: #d33422;
+
+  --color-prymary-dark: #ffb41f;
+  --color-prymary-light: #fec85d;
+  --color-prymary: #fdf0d5;
+
+}
+
+.text-prymary-bold {
+  @apply font-bold;
+  color: var(--color-prymary-light);
 }
