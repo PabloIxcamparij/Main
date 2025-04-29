@@ -3,48 +3,56 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
+  <div
+    class="flex flex-col lg:flex-row w-4/5 xl:w-2/3 gap-5 mb-10 items-center justify-center rounded-2xl text-[var(--color-prymary)]"
+  >
+    <img
+      src="/Perfil.webp"
+      alt="Profile photo of José Ixcamparij"
+      class="w-50 h-50 object-cover rounded-full opacity-0 transition-opacity duration-500"
+      onload="this.style.opacity = 1"
+      }
+    />
 
-  <div class="flex flex-col lg:flex-row w-4/5 xl:w-2/3 gap-10 mb-10 items-center justify-center rounded-2xl text-[var(--color-prymary)]">
-    <img class="w-50 h-50 rounded-full object-cover" src="\Perfil.jpg" />
     <div class="flex flex-col items-center gap-3">
       <h1 class="text-3xl font-bold text-center">
-        Hi! I am <span class="text-[var(--color-prymary-dark))]">José Ixcamparij</span>
+        Hi, I am <span class="text-[var(--color-prymary-dark))]"
+          >José Ixcamparij</span
+        >
       </h1>
       <h1 class="text-2xl font-bold">Software Engineer</h1>
     </div>
   </div>
 
   <div class="flex flex-col w-4/5 xl:w-2/3 mx-auto text-[var(--color-prymary)]">
-	<h1 class="text-4xl text-[var(--color-prymary-dark)] font-bold text-center mb-5">
-	  About Me
-	</h1>
-  
-	<span class="text-wrap">
-	  I am
-	  <span class="text-prymary-bold"> Software Engineer </span>
-	  with skills in
-	  <span class="text-prymary-bold"> FrontEnd </span> and
-	  <span class="text-prymary-bold"> BackEnd. </span>
-	  My expertise lies in developing
-	  <span class="text-prymary-bold"> web applications</span>,
-	  in both development domains. Although I have more knowledge and
-	  proficiency in
-	  <span class="text-prymary-bold"> front </span>
-	  development, because I am more familiar with modern frameworks like
-	  <span class="text-prymary-bold"> React </span> and
-	  <span class="text-prymary-bold"> Vue</span>.
-	</span>
-  
-	<br />
-  
-	<span class="text-wrap">
-	  I am totally committed to the projects I work on. I always seek
-	  to provide an efficient product. In addition, I work well in
-	  teamwork and, this is supported by knowledge of agile methodologies
-	  like
-	  <span class="text-prymary-bold"> Scrum</span>.
-	</span>
-  </div>
-  
+    <h1
+      class="text-4xl text-[var(--color-prymary-dark)] font-bold text-center mb-5"
+    >
+      About Me
+    </h1>
 
+    <span class="text-wrap">
+      I am
+      <span class="text-prymary-bold"> Software Engineer </span>
+      with skills in
+      <span class="text-prymary-bold"> FrontEnd </span> and
+      <span class="text-prymary-bold"> BackEnd. </span>
+      My expertise lies in developing
+      <span class="text-prymary-bold"> web applications</span>, in both
+      development domains. Although I have more knowledge and proficiency in
+      <span class="text-prymary-bold"> front </span>
+      development, because I am more familiar with modern frameworks like
+      <span class="text-prymary-bold"> React </span> and
+      <span class="text-prymary-bold"> Vue</span>.
+    </span>
+
+    <br />
+
+    <span class="text-wrap">
+      I am totally committed to the projects I work on. I always seek to provide
+      an efficient product. In addition, I work well in teamwork and, this is
+      supported by knowledge of agile methodologies like
+      <span class="text-prymary-bold"> Scrum</span>.
+    </span>
+  </div>
 </Layout>
